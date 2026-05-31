@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>许墨回信档案馆</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="diary-page">
+
+  <main class="container">
+    <a class="back-link" href="index.html">← 返回入口</a>
+
+    <h1>许墨回信档案馆</h1>
+    <p class="subtitle">今日动态，与我的回信。</p>
+
+    <section class="editor">
+      <label>日期</label>
+      <input type="date" id="dateInput">
+
+      <label>微博链接</label>
+      <input type="text" id="linkInput" placeholder="粘贴今天的微博链接">
+
+      <label>今日动态摘要</label>
+      <input type="text" id="titleInput" placeholder="比如：他今天发了一句话">
+
+      <label>图片链接</label>
+      <input type="text" id="imageInput" placeholder="粘贴图片地址">
+
+      <label>我的回信</label>
+      <textarea id="replyInput" placeholder="写给他的回信……"></textarea>
+
+      <button onclick="saveEntry()">保存回信</button>
+    </section>
+
+    <section>
+      <h2>回信记录</h2>
+      <div id="entries"></div>
+    </section>
+  </main>
+  <div class="plant-corner">
+    <img
+    id="plantImage"
+    src="images/plant1.png"
+    alt="plant">
+    <button
+    class="water-button"
+    onclick="waterPlant()">
+
+    💧 浇水
+    </button>
+  </div>
+  <div class="xumo-fixed">
+  <img src="images/xumo.png" alt="许墨">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

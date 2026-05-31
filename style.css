@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #eee;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+}
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at center, #262038 0%, #111 55%, #050505 100%);
+}
+
+.home-box {
+  text-align: center;
+  padding: 40px;
+}
+
+.small-text {
+  letter-spacing: 6px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.home-box h1 {
+  font-size: 52px;
+  margin: 20px 0;
+}
+
+.home-line {
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.enter-button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #7b5cff;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-size: 18px;
+}
+
+.enter-button:hover {
+  background: #957cff;
+}
+
+.container {
+  width: min(900px, 92vw);
+
+  margin: 40px auto;
+
+  padding: 45px;
+
+  background: rgba(255,255,255,0.68);
+
+  border-radius: 30px;
+
+  box-sizing: border-box;
+}
+
+.back-link {
+  color: #aaa;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.editor {
+  background: #010101;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #cfcfcf;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0b0b0b;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 180px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #7b5cff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #957cff;
+}
+
+.entry {
+  background: #1c1c1c;
+  border-left: 4px solid #7b5cff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.entry-date {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.entry-title {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.entry-link a {
+  color: #9f8cff;
+}
+
+.entry-reply {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+/* ===== 日记页：少女粉风格 ===== */
+
+.diary-page {
+  background:
+    radial-gradient(circle at top left, #ffe4ef 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #f7c8ff 0%, transparent 35%),
+    linear-gradient(135deg, #fff0f6, #fbe8ff);
+  color: #5a3b4f;
+}
+
+.diary-page .container {
+   width: min(900px, 92vw);
+  margin: 35px auto;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 45px 35px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(220, 120, 170, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.diary-page h1 {
+  color: #d86fa3;
+  text-shadow: 0 3px 0 #fff;
+}
+
+.diary-page .subtitle {
+  color: #9f6b87;
+}
+
+.diary-page .back-link {
+  color: #c06a9a;
+}
+
+.diary-page .editor {
+  background: #fff8fc;
+  border: 2px dashed #f3a9ca;
+  box-shadow: 0 10px 30px rgba(230, 130, 180, 0.18);
+  position: relative;
+}
+
+.diary-page .editor::before {
+  content: "✦  My Letter  ✦";
+  position: absolute;
+  top: -18px;
+  left: 25px;
+  background: #ffb8d6;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.diary-page label {
+  color: #b05c88;
+  font-weight: bold;
+}
+
+.diary-page input,
+.diary-page textarea {
+  background: #fff;
+  color: #5a3b4f;
+  border: 1px solid #f0a8c8;
+  box-shadow: inset 0 2px 8px rgba(255, 180, 210, 0.2);
+}
+
+.diary-page input:focus,
+.diary-page textarea:focus {
+  outline: none;
+  border-color: #e772aa;
+  box-shadow: 0 0 0 4px rgba(231, 114, 170, 0.18);
+}
+
+.diary-page button {
+  background: linear-gradient(135deg, #ff8fbd, #c98cff);
+  box-shadow: 0 8px 20px rgba(210, 110, 180, 0.35);
+}
+
+.diary-page button:hover {
+  background: linear-gradient(135deg, #ffaad0, #d7a7ff);
+}
+
+.diary-page h2 {
+  color: #c45f91;
+  border-bottom: 2px dotted #f1a9ca;
+  padding-bottom: 10px;
+}
+
+.diary-page .entry {
+  background: #fffafd;
+  border-left: 6px solid #ff9bc5;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(220, 120, 170, 0.18);
+  position: relative;
+}
+
+.diary-page .entry::after {
+  content: "♡";
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: #ff9bc5;
+  font-size: 24px;
+}
+
+.diary-page .entry-date {
+  color: #b7829e;
+}
+
+.diary-page .entry-title {
+  color: #c45f91;
+  font-weight: bold;
+}
+
+.diary-page .entry-link a {
+  color: #d86fa3;
+}
+
+.diary-page .entry-reply {
+  color: #5a3b4f;
+  background: #fff3f9;
+  padding: 15px;
+  border-radius: 16px;
+}
+.weibo-image {
+  width: 20%;
+  border-radius: 18px;
+  margin-top: 15px;
+}
+
+.delete-button{
+  margin-top: 16px;
+  background: #ff8db4;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.delete-button:hover{
+  background: #ff6ea0;
+}
+
+.plant-corner {
+  position: fixed;
+
+  right: 35px;
+  bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 999;
+}
+
+#plantImage {
+  width: 170px;
+
+  transition: 0.4s;
+}
+
+.water-button {
+  margin-top: 10px;
+
+  background: #ff9bc5;
+
+  border: none;
+
+  border-radius: 999px;
+
+  color: white;
+
+  padding: 12px 18px;
+
+  cursor: pointer;
+}
+
+.xumo-fixed {
+  position: fixed;
+  left: 30px;
+  bottom: 0;
+  width: 260px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.xumo-fixed img {
+  width: 70%;
+  display: block;
+  filter: drop-shadow(0 12px 28px rgba(180, 90, 150, 0.28));
+}
